@@ -1,0 +1,100 @@
+h1 {
+    font-size: 68px;
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    font-size: 900;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.chart-label {
+  width: 100px;
+  height: 50px;
+  background-color: #75bbb4;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+input:checked + .chart-label {
+  background-color: #356f6d;
+  box-shadow: 0 0 10px #1d3434;
+  transform: scale(1.05);
+  color: white;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+} 
+input[type="text"] , div .select-operator {
+    box-shadow: 0 0 2px #1d343490;
+    border : 1px solid #1d3434b6;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+input[type="text"]:focus , div .select-operator:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #1d343490;
+  border-color: #a5d4d0;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+.my-table{
+    --bs-table-color: #1d3434 !important;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.select-container::after {
+  content: "\f063";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  color: #408985;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  pointer-events: none;
+}
+
+tbody tr {
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+tbody tr:hover {
+    --bs-table-bg: #408985 ;
+    --bs-table-color: #f2f9f9 ;
+    box-shadow: 0 0 10px #1d3434;
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
